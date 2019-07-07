@@ -1,4 +1,4 @@
-# OpenapiClient::TaxJurisdiction
+# BuyBrowseApiClient::TaxJurisdiction
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::TaxJurisdiction.new(region: null,
+instance = BuyBrowseApiClient::TaxJurisdiction.new(region: null,
                                  tax_jurisdiction_id: null)
 ```
 
