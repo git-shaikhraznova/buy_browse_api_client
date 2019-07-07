@@ -1,4 +1,4 @@
-# OpenapiClient::Seller
+# BuyBrowseApiClient::Seller
 
 ## Properties
 
@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Seller.new(feedback_percentage: null,
+instance = BuyBrowseApiClient::Seller.new(feedback_percentage: null,
                                  feedback_score: null,
                                  seller_account_type: null,
                                  username: null)
