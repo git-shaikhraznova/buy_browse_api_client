@@ -1,4 +1,4 @@
-# OpenapiClient::SearchPagedCollection
+# BuyBrowseApiClient::SearchPagedCollection
 
 ## Properties
 
@@ -17,9 +17,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::SearchPagedCollection.new(href: null,
+instance = BuyBrowseApiClient::SearchPagedCollection.new(href: null,
                                  item_summaries: null,
                                  limit: null,
                                  _next: null,
