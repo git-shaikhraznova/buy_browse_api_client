@@ -1,4 +1,4 @@
-# OpenapiClient::SearchByImageRequest
+# BuyBrowseApiClient::SearchByImageRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::SearchByImageRequest.new(image: null)
+instance = BuyBrowseApiClient::SearchByImageRequest.new(image: null)
 ```
 
 
