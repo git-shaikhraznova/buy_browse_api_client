@@ -1,4 +1,4 @@
-# OpenapiClient::Region
+# BuyBrowseApiClient::Region
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Region.new(region_name: null,
+instance = BuyBrowseApiClient::Region.new(region_name: null,
                                  region_type: null)
 ```
 
