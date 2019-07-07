@@ -1,4 +1,4 @@
-# OpenapiClient::LegalAddress
+# BuyBrowseApiClient::LegalAddress
 
 ## Properties
 
@@ -16,9 +16,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::LegalAddress.new(address_line1: null,
+instance = BuyBrowseApiClient::LegalAddress.new(address_line1: null,
                                  address_line2: null,
                                  city: null,
                                  country: null,
