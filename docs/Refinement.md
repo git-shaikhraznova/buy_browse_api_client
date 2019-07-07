@@ -1,4 +1,4 @@
-# OpenapiClient::Refinement
+# BuyBrowseApiClient::Refinement
 
 ## Properties
 
@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Refinement.new(aspect_distributions: null,
+instance = BuyBrowseApiClient::Refinement.new(aspect_distributions: null,
                                  buying_option_distributions: null,
                                  category_distributions: null,
                                  condition_distributions: null,
