@@ -1,4 +1,4 @@
-# OpenapiClient::SortField
+# BuyBrowseApiClient::SortField
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::SortField.new(ascending: null,
+instance = BuyBrowseApiClient::SortField.new(ascending: null,
                                  field: null)
 ```
 
