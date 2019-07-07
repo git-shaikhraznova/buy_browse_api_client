@@ -1,4 +1,4 @@
-# OpenapiClient::RatingHistogram
+# BuyBrowseApiClient::RatingHistogram
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::RatingHistogram.new(count: null,
+instance = BuyBrowseApiClient::RatingHistogram.new(count: null,
                                  rating: null)
 ```
 
