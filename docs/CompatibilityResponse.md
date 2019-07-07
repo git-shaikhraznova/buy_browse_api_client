@@ -1,4 +1,4 @@
-# OpenapiClient::CompatibilityResponse
+# BuyBrowseApiClient::CompatibilityResponse
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::CompatibilityResponse.new(compatibility_status: null,
+instance = BuyBrowseApiClient::CompatibilityResponse.new(compatibility_status: null,
                                  warnings: null)
 ```
 
