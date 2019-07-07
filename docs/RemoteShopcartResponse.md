@@ -1,4 +1,4 @@
-# OpenapiClient::RemoteShopcartResponse
+# BuyBrowseApiClient::RemoteShopcartResponse
 
 ## Properties
 
@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::RemoteShopcartResponse.new(cart_items: null,
+instance = BuyBrowseApiClient::RemoteShopcartResponse.new(cart_items: null,
                                  cart_subtotal: null,
                                  cart_web_url: null,
                                  unavailable_cart_items: null,
