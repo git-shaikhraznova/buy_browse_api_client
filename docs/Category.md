@@ -1,4 +1,4 @@
-# OpenapiClient::Category
+# BuyBrowseApiClient::Category
 
 ## Properties
 
@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Category.new(category_id: null)
+instance = BuyBrowseApiClient::Category.new(category_id: null)
 ```
 
 
