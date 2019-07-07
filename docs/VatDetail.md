@@ -1,4 +1,4 @@
-# OpenapiClient::VatDetail
+# BuyBrowseApiClient::VatDetail
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::VatDetail.new(issuing_country: null,
+instance = BuyBrowseApiClient::VatDetail.new(issuing_country: null,
                                  vat_id: null)
 ```
 
