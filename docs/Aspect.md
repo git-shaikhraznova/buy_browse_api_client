@@ -1,4 +1,4 @@
-# OpenapiClient::Aspect
+# BuyBrowseApiClient::Aspect
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Aspect.new(localized_name: null,
+instance = BuyBrowseApiClient::Aspect.new(localized_name: null,
                                  localized_values: null)
 ```
 
