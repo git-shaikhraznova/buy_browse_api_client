@@ -1,4 +1,4 @@
-# OpenapiClient::ShipToLocations
+# BuyBrowseApiClient::ShipToLocations
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::ShipToLocations.new(region_excluded: null,
+instance = BuyBrowseApiClient::ShipToLocations.new(region_excluded: null,
                                  region_included: null)
 ```
 
