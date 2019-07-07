@@ -1,4 +1,4 @@
-# OpenapiClient::Error
+# BuyBrowseApiClient::Error
 
 ## Properties
 
@@ -17,9 +17,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Error.new(category: null,
+instance = BuyBrowseApiClient::Error.new(category: null,
                                  domain: null,
                                  error_id: null,
                                  input_ref_ids: null,
