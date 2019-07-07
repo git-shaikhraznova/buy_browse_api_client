@@ -1,4 +1,4 @@
-# OpenapiClient::PickupOptionSummary
+# BuyBrowseApiClient::PickupOptionSummary
 
 ## Properties
 
@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::PickupOptionSummary.new(pickup_location_type: null)
+instance = BuyBrowseApiClient::PickupOptionSummary.new(pickup_location_type: null)
 ```
 
 
