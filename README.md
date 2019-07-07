@@ -23,22 +23,22 @@ gem build openapi_client.gemspec
 Then either install the gem locally:
 
 ```shell
-gem install ./openapi_client-1.0.0.gem
+gem install ./buy_browse_api_client-1.0.0.gem
 ```
 
-(for development, run `gem install --dev ./openapi_client-1.0.0.gem` to install the development dependencies)
+(for development, run `gem install --dev ./buy_browse_api_client-1.0.0.gem` to install the development dependencies)
 
 or publish the gem to a gem hosting service, e.g. [RubyGems](https://rubygems.org/).
 
 Finally add this to the Gemfile:
 
-    gem 'openapi_client', '~> 1.0.0'
+    gem 'buy_browse_api_client', '~> 1.0.0'
 
 ### Install from Git
 
 If the Ruby gem is hosted at a git repository: https://github.com/GIT_USER_ID/GIT_REPO_ID, then add the following in the Gemfile:
 
-    gem 'openapi_client', '~> 1.0.0', :git => 'git-shaikhraznova/buy_browse_api_client'
+    gem 'buy_browse_api_client', '~> 1.0.0', :git => 'git-shaikhraznova/buy_browse_api_client'
 
 ### Include the Ruby code directly
 
