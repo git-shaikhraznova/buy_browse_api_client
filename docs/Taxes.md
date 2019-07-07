@@ -1,4 +1,4 @@
-# OpenapiClient::Taxes
+# BuyBrowseApiClient::Taxes
 
 ## Properties
 
@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Taxes.new(ebay_collect_and_remit_tax: null,
+instance = BuyBrowseApiClient::Taxes.new(ebay_collect_and_remit_tax: null,
                                  included_in_price: null,
                                  shipping_and_handling_taxed: null,
                                  tax_jurisdiction: null,
