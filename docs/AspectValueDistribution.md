@@ -1,4 +1,4 @@
-# OpenapiClient::AspectValueDistribution
+# BuyBrowseApiClient::AspectValueDistribution
 
 ## Properties
 
@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::AspectValueDistribution.new(localized_aspect_value: null,
+instance = BuyBrowseApiClient::AspectValueDistribution.new(localized_aspect_value: null,
                                  match_count: null,
                                  refinement_href: null)
 ```
