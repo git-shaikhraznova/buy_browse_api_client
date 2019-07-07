@@ -1,4 +1,4 @@
-# OpenapiClient::ItemReturnTerms
+# BuyBrowseApiClient::ItemReturnTerms
 
 ## Properties
 
@@ -16,9 +16,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::ItemReturnTerms.new(extended_holiday_returns_offered: null,
+instance = BuyBrowseApiClient::ItemReturnTerms.new(extended_holiday_returns_offered: null,
                                  refund_method: null,
                                  restocking_fee_percentage: null,
                                  return_instructions: null,
