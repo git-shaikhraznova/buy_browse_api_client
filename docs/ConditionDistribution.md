@@ -1,4 +1,4 @@
-# OpenapiClient::ConditionDistribution
+# BuyBrowseApiClient::ConditionDistribution
 
 ## Properties
 
@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::ConditionDistribution.new(condition: null,
+instance = BuyBrowseApiClient::ConditionDistribution.new(condition: null,
                                  condition_id: null,
                                  match_count: null,
                                  refinement_href: null)
