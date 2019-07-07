@@ -1,4 +1,4 @@
-# OpenapiClient::BuyingOptionDistribution
+# BuyBrowseApiClient::BuyingOptionDistribution
 
 ## Properties
 
@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::BuyingOptionDistribution.new(buying_option: null,
+instance = BuyBrowseApiClient::BuyingOptionDistribution.new(buying_option: null,
                                  match_count: null,
                                  refinement_href: null)
 ```
