@@ -1,4 +1,4 @@
-# OpenapiClient::ItemSummaryApi
+# BuyBrowseApiClient::ItemSummaryApi
 
 All URIs are relative to *https://api.ebay.com/buy/browse/v1*
 
@@ -20,14 +20,14 @@ This method searches for eBay items by various query parameters and retrieves su
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'buy_browse_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+BuyBrowseApiClient.configure do |config|
   # Configure OAuth2 access token for authorization: api_auth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = OpenapiClient::ItemSummaryApi.new
+api_instance = BuyBrowseApiClient::ItemSummaryApi.new
 opts = {
   aspect_filter: 'aspect_filter_example', # String | This field lets you filter by item aspects. The aspect name/value pairs and category, which is required, is used to limit the results to specific aspects of the item. For example, in a clothing category one aspect pair would be Color/Red. For example, the method below uses the category ID for Women's Clothing. This will return only items for a woman's red shirt. /buy/browse/v1/item_summary/search?q=shirt&amp;category_ids=15724&amp;aspect_filter=categoryId:15724,Color:{Red} To get a list of the aspects pairs and the category, which is returned in the dominantCategoryId field, set fieldgroups to ASPECT_REFINEMENTS. /buy/browse/v1/item_summary/search?q=shirt&amp;fieldgroups=ASPECT_REFINEMENTS Required: The category ID is required twice; once as a URI parameter and as part of the aspect_filter. For implementation help, refer to eBay API documentation at https://developer.ebay.com/devzone/rest/api-ref/browse/types/AspectFilter.html
   category_ids: 'category_ids_example', # String | The category ID is used to limit the results. This field can have one category ID or a comma separated list of IDs. For example: /buy/browse/v1/item_summary/search?category_ids=29792 Note: Currently, you can pass in only one category ID. You can also use any combination of the category_Ids, epid, and q fields. This gives you additional control over the result set. For example, let's say you are looking of a toy phone. If you search for &quot;phone&quot;, the result set will be mobile phones because this is the &quot;Best Match&quot; for this search. But if you also include the toy category ID, the results will be what you wanted. For example: /buy/browse/v1/item_summary/search?q=phone&amp;category_ids=220 The list of eBay category IDs is not published and category IDs are not the same across all the eBay marketplaces. You can use the following techniques to find a category by site: Use the Category Changes page. Use the Taxonomy API. For details see Get Categories for Buy APIs. Submit the following method to get the dominantCategoryId for an item. /buy/browse/v1/item_summary/search?q=keyword&amp;fieldgroups=ASPECT_REFINEMENTS Note: If a top-level (L1) category is specified, you must also include the q query parameter. Required: The method must have category_ids, epid, gtin, or q (or any combination of these)
@@ -45,7 +45,7 @@ opts = {
 begin
   result = api_instance.search(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue BuyBrowseApiClient::ApiError => e
   puts "Exception when calling ItemSummaryApi->search: #{e}"
 end
 ```
