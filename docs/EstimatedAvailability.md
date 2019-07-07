@@ -1,4 +1,4 @@
-# OpenapiClient::EstimatedAvailability
+# BuyBrowseApiClient::EstimatedAvailability
 
 ## Properties
 
@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::EstimatedAvailability.new(availability_threshold: null,
+instance = BuyBrowseApiClient::EstimatedAvailability.new(availability_threshold: null,
                                  availability_threshold_type: null,
                                  delivery_options: null,
                                  estimated_availability_status: null,
