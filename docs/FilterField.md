@@ -1,4 +1,4 @@
-# OpenapiClient::FilterField
+# BuyBrowseApiClient::FilterField
 
 ## Properties
 
@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::FilterField.new(field: null,
+instance = BuyBrowseApiClient::FilterField.new(field: null,
                                  negated: null,
                                  range: null,
                                  set: null,
