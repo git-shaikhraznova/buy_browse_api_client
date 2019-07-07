@@ -1,4 +1,4 @@
-# OpenapiClient::AttributeNameValue
+# BuyBrowseApiClient::AttributeNameValue
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::AttributeNameValue.new(name: null,
+instance = BuyBrowseApiClient::AttributeNameValue.new(name: null,
                                  value: null)
 ```
 
