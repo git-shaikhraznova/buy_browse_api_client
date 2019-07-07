@@ -1,4 +1,4 @@
-# OpenapiClient::Item
+# BuyBrowseApiClient::Item
 
 ## Properties
 
@@ -65,9 +65,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Item.new(additional_images: null,
+instance = BuyBrowseApiClient::Item.new(additional_images: null,
                                  adult_only: null,
                                  age_group: null,
                                  bid_count: null,
