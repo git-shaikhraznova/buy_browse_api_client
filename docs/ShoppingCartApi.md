@@ -1,4 +1,4 @@
-# OpenapiClient::ShoppingCartApi
+# BuyBrowseApiClient::ShoppingCartApi
 
 All URIs are relative to *https://api.ebay.com/buy/browse/v1*
 
@@ -23,22 +23,22 @@ This is an Experimental method. This method creates an eBay cart for the eBay me
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'buy_browse_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+BuyBrowseApiClient.configure do |config|
   # Configure OAuth2 access token for authorization: api_auth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = OpenapiClient::ShoppingCartApi.new
+api_instance = BuyBrowseApiClient::ShoppingCartApi.new
 opts = {
-  add_cart_item_input: OpenapiClient::AddCartItemInput.new # AddCartItemInput | 
+  add_cart_item_input: BuyBrowseApiClient::AddCartItemInput.new # AddCartItemInput | 
 }
 
 begin
   result = api_instance.add_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue BuyBrowseApiClient::ApiError => e
   puts "Exception when calling ShoppingCartApi->add_item: #{e}"
 end
 ```
@@ -76,19 +76,19 @@ This is an experimental method. This method retrieves all the items in the eBay 
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'buy_browse_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+BuyBrowseApiClient.configure do |config|
   # Configure OAuth2 access token for authorization: api_auth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = OpenapiClient::ShoppingCartApi.new
+api_instance = BuyBrowseApiClient::ShoppingCartApi.new
 
 begin
   result = api_instance.get_shopping_cart
   p result
-rescue OpenapiClient::ApiError => e
+rescue BuyBrowseApiClient::ApiError => e
   puts "Exception when calling ShoppingCartApi->get_shopping_cart: #{e}"
 end
 ```
@@ -123,22 +123,22 @@ This is an experimental method. This method removes a specific item from the eBa
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'buy_browse_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+BuyBrowseApiClient.configure do |config|
   # Configure OAuth2 access token for authorization: api_auth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = OpenapiClient::ShoppingCartApi.new
+api_instance = BuyBrowseApiClient::ShoppingCartApi.new
 opts = {
-  remove_cart_item_input: OpenapiClient::RemoveCartItemInput.new # RemoveCartItemInput | 
+  remove_cart_item_input: BuyBrowseApiClient::RemoveCartItemInput.new # RemoveCartItemInput | 
 }
 
 begin
   result = api_instance.remove_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue BuyBrowseApiClient::ApiError => e
   puts "Exception when calling ShoppingCartApi->remove_item: #{e}"
 end
 ```
@@ -176,22 +176,22 @@ This is an experimental method. This method updates the quantity value of a spec
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'buy_browse_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+BuyBrowseApiClient.configure do |config|
   # Configure OAuth2 access token for authorization: api_auth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = OpenapiClient::ShoppingCartApi.new
+api_instance = BuyBrowseApiClient::ShoppingCartApi.new
 opts = {
-  update_cart_item_input: OpenapiClient::UpdateCartItemInput.new # UpdateCartItemInput | 
+  update_cart_item_input: BuyBrowseApiClient::UpdateCartItemInput.new # UpdateCartItemInput | 
 }
 
 begin
   result = api_instance.update_quantity(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue BuyBrowseApiClient::ApiError => e
   puts "Exception when calling ShoppingCartApi->update_quantity: #{e}"
 end
 ```
