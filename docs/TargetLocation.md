@@ -1,4 +1,4 @@
-# OpenapiClient::TargetLocation
+# BuyBrowseApiClient::TargetLocation
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::TargetLocation.new(unit_of_measure: null,
+instance = BuyBrowseApiClient::TargetLocation.new(unit_of_measure: null,
                                  value: null)
 ```
 
