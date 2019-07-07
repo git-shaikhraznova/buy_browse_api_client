@@ -38,7 +38,7 @@ Finally add this to the Gemfile:
 
 If the Ruby gem is hosted at a git repository: https://github.com/GIT_USER_ID/GIT_REPO_ID, then add the following in the Gemfile:
 
-    gem 'openapi_client', :git => 'https://github.com/GIT_USER_ID/GIT_REPO_ID.git'
+    gem 'openapi_client', '~> 1.0.0', :git => 'git-shaikhraznova/buy_browse_api_client'
 
 ### Include the Ruby code directly
 
@@ -54,7 +54,7 @@ Please follow the [installation](#installation) procedure and then run the follo
 
 ```ruby
 # Load the gem
-require 'openapi_client'
+require 'buy_browse_api_client'
 
 # Setup authorization
 OpenapiClient.configure do |config|
@@ -62,17 +62,17 @@ OpenapiClient.configure do |config|
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = OpenapiClient::ItemApi.new
+api_instance = BuyBrowseApiClient::ItemApi.new
 item_id = 'item_id_example' # String | The eBay RESTful identifier of an item (such as a part you want to check). This ID is returned by the Browse and Feed API methods. RESTful Item ID Format: v1|#|# For example: v1|272394640372|0 or v1|162846450672|461882996982 For more information about item ID for RESTful APIs, see the Legacy API compatibility section of the Buy APIs Overview.
 x_ebay_c_marketplace_id = 'x_ebay_c_marketplace_id_example' # String | The ID of the eBay marketplace you want to use. Note: This value is case sensitive. For example: &nbsp;&nbsp;X-EBAY-C-MARKETPLACE-ID = EBAY_US For a list of supported sites see, API Restrictions.
 opts = {
-  compatibility_payload: OpenapiClient::CompatibilityPayload.new # CompatibilityPayload | 
+  compatibility_payload: BuyBrowseApiClient::CompatibilityPayload.new # CompatibilityPayload | 
 }
 
 begin
   result = api_instance.check_compatibility(item_id, x_ebay_c_marketplace_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue BuyBrowseApiClient::ApiError => e
   puts "Exception when calling ItemApi->check_compatibility: #{e}"
 end
 
@@ -84,82 +84,82 @@ All URIs are relative to *https://api.ebay.com/buy/browse/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*OpenapiClient::ItemApi* | [**check_compatibility**](docs/ItemApi.md#check_compatibility) | **POST** /item/{item_id}/check_compatibility | 
-*OpenapiClient::ItemApi* | [**get_item**](docs/ItemApi.md#get_item) | **GET** /item/{item_id} | 
-*OpenapiClient::ItemApi* | [**get_item_by_legacy_id**](docs/ItemApi.md#get_item_by_legacy_id) | **GET** /item/get_item_by_legacy_id | 
-*OpenapiClient::ItemApi* | [**get_items_by_item_group**](docs/ItemApi.md#get_items_by_item_group) | **GET** /item/get_items_by_item_group | 
-*OpenapiClient::ItemSummaryApi* | [**search**](docs/ItemSummaryApi.md#search) | **GET** /item_summary/search | 
-*OpenapiClient::SearchByImageApi* | [**search_by_image**](docs/SearchByImageApi.md#search_by_image) | **POST** /item_summary/search_by_image | 
-*OpenapiClient::ShoppingCartApi* | [**add_item**](docs/ShoppingCartApi.md#add_item) | **POST** /shopping_cart/add_item | 
-*OpenapiClient::ShoppingCartApi* | [**get_shopping_cart**](docs/ShoppingCartApi.md#get_shopping_cart) | **GET** /shopping_cart/ | 
-*OpenapiClient::ShoppingCartApi* | [**remove_item**](docs/ShoppingCartApi.md#remove_item) | **POST** /shopping_cart/remove_item | 
-*OpenapiClient::ShoppingCartApi* | [**update_quantity**](docs/ShoppingCartApi.md#update_quantity) | **POST** /shopping_cart/update_quantity | 
+*BuyBrowseApiClient::ItemApi* | [**check_compatibility**](docs/ItemApi.md#check_compatibility) | **POST** /item/{item_id}/check_compatibility | 
+*BuyBrowseApiClient::ItemApi* | [**get_item**](docs/ItemApi.md#get_item) | **GET** /item/{item_id} | 
+*BuyBrowseApiClient::ItemApi* | [**get_item_by_legacy_id**](docs/ItemApi.md#get_item_by_legacy_id) | **GET** /item/get_item_by_legacy_id | 
+*BuyBrowseApiClient::ItemApi* | [**get_items_by_item_group**](docs/ItemApi.md#get_items_by_item_group) | **GET** /item/get_items_by_item_group | 
+*BuyBrowseApiClient::ItemSummaryApi* | [**search**](docs/ItemSummaryApi.md#search) | **GET** /item_summary/search | 
+*BuyBrowseApiClient::SearchByImageApi* | [**search_by_image**](docs/SearchByImageApi.md#search_by_image) | **POST** /item_summary/search_by_image | 
+*BuyBrowseApiClient::ShoppingCartApi* | [**add_item**](docs/ShoppingCartApi.md#add_item) | **POST** /shopping_cart/add_item | 
+*BuyBrowseApiClient::ShoppingCartApi* | [**get_shopping_cart**](docs/ShoppingCartApi.md#get_shopping_cart) | **GET** /shopping_cart/ | 
+*BuyBrowseApiClient::ShoppingCartApi* | [**remove_item**](docs/ShoppingCartApi.md#remove_item) | **POST** /shopping_cart/remove_item | 
+*BuyBrowseApiClient::ShoppingCartApi* | [**update_quantity**](docs/ShoppingCartApi.md#update_quantity) | **POST** /shopping_cart/update_quantity | 
 
 
 ## Documentation for Models
 
- - [OpenapiClient::AddCartItemInput](docs/AddCartItemInput.md)
- - [OpenapiClient::AdditionalProductIdentity](docs/AdditionalProductIdentity.md)
- - [OpenapiClient::Address](docs/Address.md)
- - [OpenapiClient::Amount](docs/Amount.md)
- - [OpenapiClient::Aspect](docs/Aspect.md)
- - [OpenapiClient::AspectDistribution](docs/AspectDistribution.md)
- - [OpenapiClient::AspectFilter](docs/AspectFilter.md)
- - [OpenapiClient::AspectGroup](docs/AspectGroup.md)
- - [OpenapiClient::AspectValueDistribution](docs/AspectValueDistribution.md)
- - [OpenapiClient::AttributeNameValue](docs/AttributeNameValue.md)
- - [OpenapiClient::BuyingOptionDistribution](docs/BuyingOptionDistribution.md)
- - [OpenapiClient::CartItem](docs/CartItem.md)
- - [OpenapiClient::Category](docs/Category.md)
- - [OpenapiClient::CategoryDistribution](docs/CategoryDistribution.md)
- - [OpenapiClient::CommonDescriptions](docs/CommonDescriptions.md)
- - [OpenapiClient::CompatibilityPayload](docs/CompatibilityPayload.md)
- - [OpenapiClient::CompatibilityResponse](docs/CompatibilityResponse.md)
- - [OpenapiClient::ConditionDistribution](docs/ConditionDistribution.md)
- - [OpenapiClient::ConvertedAmount](docs/ConvertedAmount.md)
- - [OpenapiClient::Error](docs/Error.md)
- - [OpenapiClient::ErrorDetailV3](docs/ErrorDetailV3.md)
- - [OpenapiClient::ErrorParameter](docs/ErrorParameter.md)
- - [OpenapiClient::ErrorParameterV3](docs/ErrorParameterV3.md)
- - [OpenapiClient::EstimatedAvailability](docs/EstimatedAvailability.md)
- - [OpenapiClient::FilterField](docs/FilterField.md)
- - [OpenapiClient::Image](docs/Image.md)
- - [OpenapiClient::Item](docs/Item.md)
- - [OpenapiClient::ItemGroupSummary](docs/ItemGroupSummary.md)
- - [OpenapiClient::ItemLocationImpl](docs/ItemLocationImpl.md)
- - [OpenapiClient::ItemReturnTerms](docs/ItemReturnTerms.md)
- - [OpenapiClient::ItemSummary](docs/ItemSummary.md)
- - [OpenapiClient::Items](docs/Items.md)
- - [OpenapiClient::LegalAddress](docs/LegalAddress.md)
- - [OpenapiClient::MarketingPrice](docs/MarketingPrice.md)
- - [OpenapiClient::PickupOptionSummary](docs/PickupOptionSummary.md)
- - [OpenapiClient::Price](docs/Price.md)
- - [OpenapiClient::Product](docs/Product.md)
- - [OpenapiClient::ProductIdentity](docs/ProductIdentity.md)
- - [OpenapiClient::RangeValue](docs/RangeValue.md)
- - [OpenapiClient::RatingHistogram](docs/RatingHistogram.md)
- - [OpenapiClient::Refinement](docs/Refinement.md)
- - [OpenapiClient::Region](docs/Region.md)
- - [OpenapiClient::RemoteShopcartResponse](docs/RemoteShopcartResponse.md)
- - [OpenapiClient::RemoveCartItemInput](docs/RemoveCartItemInput.md)
- - [OpenapiClient::ReviewRating](docs/ReviewRating.md)
- - [OpenapiClient::SearchByImageRequest](docs/SearchByImageRequest.md)
- - [OpenapiClient::SearchPagedCollection](docs/SearchPagedCollection.md)
- - [OpenapiClient::Seller](docs/Seller.md)
- - [OpenapiClient::SellerDetail](docs/SellerDetail.md)
- - [OpenapiClient::SellerLegalInfo](docs/SellerLegalInfo.md)
- - [OpenapiClient::ShipToLocation](docs/ShipToLocation.md)
- - [OpenapiClient::ShipToLocations](docs/ShipToLocations.md)
- - [OpenapiClient::ShippingOption](docs/ShippingOption.md)
- - [OpenapiClient::ShippingOptionSummary](docs/ShippingOptionSummary.md)
- - [OpenapiClient::SortField](docs/SortField.md)
- - [OpenapiClient::TargetLocation](docs/TargetLocation.md)
- - [OpenapiClient::TaxJurisdiction](docs/TaxJurisdiction.md)
- - [OpenapiClient::Taxes](docs/Taxes.md)
- - [OpenapiClient::TimeDuration](docs/TimeDuration.md)
- - [OpenapiClient::TypedNameValue](docs/TypedNameValue.md)
- - [OpenapiClient::UpdateCartItemInput](docs/UpdateCartItemInput.md)
- - [OpenapiClient::VatDetail](docs/VatDetail.md)
+ - [BuyBrowseApiClient::AddCartItemInput](docs/AddCartItemInput.md)
+ - [BuyBrowseApiClient::AdditionalProductIdentity](docs/AdditionalProductIdentity.md)
+ - [BuyBrowseApiClient::Address](docs/Address.md)
+ - [BuyBrowseApiClient::Amount](docs/Amount.md)
+ - [BuyBrowseApiClient::Aspect](docs/Aspect.md)
+ - [BuyBrowseApiClient::AspectDistribution](docs/AspectDistribution.md)
+ - [BuyBrowseApiClient::AspectFilter](docs/AspectFilter.md)
+ - [BuyBrowseApiClient::AspectGroup](docs/AspectGroup.md)
+ - [BuyBrowseApiClient::AspectValueDistribution](docs/AspectValueDistribution.md)
+ - [BuyBrowseApiClient::AttributeNameValue](docs/AttributeNameValue.md)
+ - [BuyBrowseApiClient::BuyingOptionDistribution](docs/BuyingOptionDistribution.md)
+ - [BuyBrowseApiClient::CartItem](docs/CartItem.md)
+ - [BuyBrowseApiClient::Category](docs/Category.md)
+ - [BuyBrowseApiClient::CategoryDistribution](docs/CategoryDistribution.md)
+ - [BuyBrowseApiClient::CommonDescriptions](docs/CommonDescriptions.md)
+ - [BuyBrowseApiClient::CompatibilityPayload](docs/CompatibilityPayload.md)
+ - [BuyBrowseApiClient::CompatibilityResponse](docs/CompatibilityResponse.md)
+ - [BuyBrowseApiClient::ConditionDistribution](docs/ConditionDistribution.md)
+ - [BuyBrowseApiClient::ConvertedAmount](docs/ConvertedAmount.md)
+ - [BuyBrowseApiClient::Error](docs/Error.md)
+ - [BuyBrowseApiClient::ErrorDetailV3](docs/ErrorDetailV3.md)
+ - [BuyBrowseApiClient::ErrorParameter](docs/ErrorParameter.md)
+ - [BuyBrowseApiClient::ErrorParameterV3](docs/ErrorParameterV3.md)
+ - [BuyBrowseApiClient::EstimatedAvailability](docs/EstimatedAvailability.md)
+ - [BuyBrowseApiClient::FilterField](docs/FilterField.md)
+ - [BuyBrowseApiClient::Image](docs/Image.md)
+ - [BuyBrowseApiClient::Item](docs/Item.md)
+ - [BuyBrowseApiClient::ItemGroupSummary](docs/ItemGroupSummary.md)
+ - [BuyBrowseApiClient::ItemLocationImpl](docs/ItemLocationImpl.md)
+ - [BuyBrowseApiClient::ItemReturnTerms](docs/ItemReturnTerms.md)
+ - [BuyBrowseApiClient::ItemSummary](docs/ItemSummary.md)
+ - [BuyBrowseApiClient::Items](docs/Items.md)
+ - [BuyBrowseApiClient::LegalAddress](docs/LegalAddress.md)
+ - [BuyBrowseApiClient::MarketingPrice](docs/MarketingPrice.md)
+ - [BuyBrowseApiClient::PickupOptionSummary](docs/PickupOptionSummary.md)
+ - [BuyBrowseApiClient::Price](docs/Price.md)
+ - [BuyBrowseApiClient::Product](docs/Product.md)
+ - [BuyBrowseApiClient::ProductIdentity](docs/ProductIdentity.md)
+ - [BuyBrowseApiClient::RangeValue](docs/RangeValue.md)
+ - [BuyBrowseApiClient::RatingHistogram](docs/RatingHistogram.md)
+ - [BuyBrowseApiClient::Refinement](docs/Refinement.md)
+ - [BuyBrowseApiClient::Region](docs/Region.md)
+ - [BuyBrowseApiClient::RemoteShopcartResponse](docs/RemoteShopcartResponse.md)
+ - [BuyBrowseApiClient::RemoveCartItemInput](docs/RemoveCartItemInput.md)
+ - [BuyBrowseApiClient::ReviewRating](docs/ReviewRating.md)
+ - [BuyBrowseApiClient::SearchByImageRequest](docs/SearchByImageRequest.md)
+ - [BuyBrowseApiClient::SearchPagedCollection](docs/SearchPagedCollection.md)
+ - [BuyBrowseApiClient::Seller](docs/Seller.md)
+ - [BuyBrowseApiClient::SellerDetail](docs/SellerDetail.md)
+ - [BuyBrowseApiClient::SellerLegalInfo](docs/SellerLegalInfo.md)
+ - [BuyBrowseApiClient::ShipToLocation](docs/ShipToLocation.md)
+ - [BuyBrowseApiClient::ShipToLocations](docs/ShipToLocations.md)
+ - [BuyBrowseApiClient::ShippingOption](docs/ShippingOption.md)
+ - [BuyBrowseApiClient::ShippingOptionSummary](docs/ShippingOptionSummary.md)
+ - [BuyBrowseApiClient::SortField](docs/SortField.md)
+ - [BuyBrowseApiClient::TargetLocation](docs/TargetLocation.md)
+ - [BuyBrowseApiClient::TaxJurisdiction](docs/TaxJurisdiction.md)
+ - [BuyBrowseApiClient::Taxes](docs/Taxes.md)
+ - [BuyBrowseApiClient::TimeDuration](docs/TimeDuration.md)
+ - [BuyBrowseApiClient::TypedNameValue](docs/TypedNameValue.md)
+ - [BuyBrowseApiClient::UpdateCartItemInput](docs/UpdateCartItemInput.md)
+ - [BuyBrowseApiClient::VatDetail](docs/VatDetail.md)
 
 
 ## Documentation for Authorization
