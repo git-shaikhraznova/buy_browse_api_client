@@ -1,4 +1,4 @@
-# OpenapiClient::SellerLegalInfo
+# BuyBrowseApiClient::SellerLegalInfo
 
 ## Properties
 
@@ -19,9 +19,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::SellerLegalInfo.new(email: null,
+instance = BuyBrowseApiClient::SellerLegalInfo.new(email: null,
                                  fax: null,
                                  imprint: null,
                                  legal_contact_first_name: null,
