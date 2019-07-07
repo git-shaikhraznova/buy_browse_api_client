@@ -1,4 +1,4 @@
-# OpenapiClient::RangeValue
+# BuyBrowseApiClient::RangeValue
 
 ## Properties
 
@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::RangeValue.new(_end: null,
+instance = BuyBrowseApiClient::RangeValue.new(_end: null,
                                  exclusive_end: null,
                                  exclusive_start: null,
                                  range: null,
