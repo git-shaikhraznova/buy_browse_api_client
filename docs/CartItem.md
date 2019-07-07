@@ -1,4 +1,4 @@
-# OpenapiClient::CartItem
+# BuyBrowseApiClient::CartItem
 
 ## Properties
 
@@ -16,9 +16,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::CartItem.new(cart_item_id: null,
+instance = BuyBrowseApiClient::CartItem.new(cart_item_id: null,
                                  cart_item_subtotal: null,
                                  image: null,
                                  item_id: null,
