@@ -1,4 +1,4 @@
-# OpenapiClient::AdditionalProductIdentity
+# BuyBrowseApiClient::AdditionalProductIdentity
 
 ## Properties
 
@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::AdditionalProductIdentity.new(product_identity: null)
+instance = BuyBrowseApiClient::AdditionalProductIdentity.new(product_identity: null)
 ```
 
 
