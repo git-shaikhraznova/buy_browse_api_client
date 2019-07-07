@@ -1,4 +1,4 @@
-# OpenapiClient::CommonDescriptions
+# BuyBrowseApiClient::CommonDescriptions
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::CommonDescriptions.new(description: null,
+instance = BuyBrowseApiClient::CommonDescriptions.new(description: null,
                                  item_ids: null)
 ```
 
