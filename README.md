@@ -57,7 +57,7 @@ Please follow the [installation](#installation) procedure and then run the follo
 require 'buy_browse_api_client'
 
 # Setup authorization
-OpenapiClient.configure do |config|
+BuyBrowseApiClient.configure do |config|
   # Configure OAuth2 access token for authorization: api_auth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
