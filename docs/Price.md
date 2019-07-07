@@ -1,4 +1,4 @@
-# OpenapiClient::Price
+# BuyBrowseApiClient::Price
 
 ## Properties
 
@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::Price.new(converted_from_currency: null,
+instance = BuyBrowseApiClient::Price.new(converted_from_currency: null,
                                  converted_from_value: null,
                                  currency: null,
                                  value: null)
