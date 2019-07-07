@@ -1,4 +1,4 @@
-# OpenapiClient::ItemLocationImpl
+# BuyBrowseApiClient::ItemLocationImpl
 
 ## Properties
 
@@ -15,9 +15,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::ItemLocationImpl.new(address_line1: null,
+instance = BuyBrowseApiClient::ItemLocationImpl.new(address_line1: null,
                                  address_line2: null,
                                  city: null,
                                  country: null,
