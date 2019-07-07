@@ -36,7 +36,7 @@ Finally add this to the Gemfile:
 
 ### Install from Git
 
-If the Ruby gem is hosted at a git repository: https://github.com/GIT_USER_ID/GIT_REPO_ID, then add the following in the Gemfile:
+If the Ruby gem is hosted at a git repository: https://github.com/git-shaikhraznova/buy_browse_api_client, then add the following in the Gemfile:
 
     gem 'buy_browse_api_client', '~> 1.0.0', :git => 'git-shaikhraznova/buy_browse_api_client'
 
