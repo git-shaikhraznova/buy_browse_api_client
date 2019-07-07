@@ -1,4 +1,4 @@
-# OpenapiClient::TimeDuration
+# BuyBrowseApiClient::TimeDuration
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::TimeDuration.new(unit: null,
+instance = BuyBrowseApiClient::TimeDuration.new(unit: null,
                                  value: null)
 ```
 
