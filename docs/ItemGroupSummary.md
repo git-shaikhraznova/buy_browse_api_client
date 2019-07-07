@@ -1,4 +1,4 @@
-# OpenapiClient::ItemGroupSummary
+# BuyBrowseApiClient::ItemGroupSummary
 
 ## Properties
 
@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::ItemGroupSummary.new(item_group_additional_images: null,
+instance = BuyBrowseApiClient::ItemGroupSummary.new(item_group_additional_images: null,
                                  item_group_href: null,
                                  item_group_id: null,
                                  item_group_image: null,
