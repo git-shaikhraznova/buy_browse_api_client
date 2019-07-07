@@ -1,4 +1,4 @@
-# OpenapiClient::TypedNameValue
+# BuyBrowseApiClient::TypedNameValue
 
 ## Properties
 
@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::TypedNameValue.new(name: null,
+instance = BuyBrowseApiClient::TypedNameValue.new(name: null,
                                  type: null,
                                  value: null)
 ```
