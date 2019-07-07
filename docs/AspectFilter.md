@@ -1,4 +1,4 @@
-# OpenapiClient::AspectFilter
+# BuyBrowseApiClient::AspectFilter
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::AspectFilter.new(category_id: null,
+instance = BuyBrowseApiClient::AspectFilter.new(category_id: null,
                                  filters: null)
 ```
 
