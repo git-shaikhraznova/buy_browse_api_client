@@ -1,4 +1,4 @@
-# OpenapiClient::CategoryDistribution
+# BuyBrowseApiClient::CategoryDistribution
 
 ## Properties
 
@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::CategoryDistribution.new(category_id: null,
+instance = BuyBrowseApiClient::CategoryDistribution.new(category_id: null,
                                  category_name: null,
                                  match_count: null,
                                  refinement_href: null)
