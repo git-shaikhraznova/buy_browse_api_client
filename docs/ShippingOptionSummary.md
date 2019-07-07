@@ -1,4 +1,4 @@
-# OpenapiClient::ShippingOptionSummary
+# BuyBrowseApiClient::ShippingOptionSummary
 
 ## Properties
 
@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require 'BuyBrowseApiClient'
 
-instance = OpenapiClient::ShippingOptionSummary.new(max_estimated_delivery_date: null,
+instance = BuyBrowseApiClient::ShippingOptionSummary.new(max_estimated_delivery_date: null,
                                  min_estimated_delivery_date: null,
                                  shipping_cost: null,
                                  shipping_cost_type: null)
